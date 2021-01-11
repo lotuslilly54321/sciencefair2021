@@ -5,40 +5,40 @@ def reader(string):
     data = read_fasta_file_modif(string)
     return data
 
-
-def shared_spliced_array(t1, t2):
-    whole_array = []
-    for i in range(len(t1)+1):
-        lst = []
-        for j in range(len(t2)+1):
-            lst.append(0)
-        whole_array.append(lst)
-    for i in range(1, len(t1)+1):
-        for j in range(1, len(t2)+1):
-            if t1[i-1] == t2[j-1]:
-                whole_array[i][j] = whole_array[i-1][j-1] + 1
-            else:
-                whole_array[i][j] = max(whole_array[i-1][j],  whole_array[i][j-1])
-    return whole_array
-
-
-def trace_shared_spliced(t1, t2, array):
-    m = len(t1)
-    n = len(t2)
-    motif = ''
-    while array[m][n] != 0:
-        if array[m][n] == array[m][n-1]:
-            n -= 1
-        elif array[m][n] == array[m-1][n]:
-            m -= 1
-        else:
-            motif += t1[m-1]
-            m -= 1
-            n -= 1
-    motif = list(motif)
-    motif.reverse()
-    motif = ''.join(motif)
-    return motif
+#
+# def shared_spliced_array(t1, t2):
+#     whole_array = []
+#     for i in range(len(t1)+1):
+#         lst = []
+#         for j in range(len(t2)+1):
+#             lst.append(0)
+#         whole_array.append(lst)
+#     for i in range(1, len(t1)+1):
+#         for j in range(1, len(t2)+1):
+#             if t1[i-1] == t2[j-1]:
+#                 whole_array[i][j] = whole_array[i-1][j-1] + 1
+#             else:
+#                 whole_array[i][j] = max(whole_array[i-1][j],  whole_array[i][j-1])
+#     return whole_array
+#
+#
+# def trace_shared_spliced(t1, t2, array):
+#     m = len(t1)
+#     n = len(t2)
+#     motif = ''
+#     while array[m][n] != 0:
+#         if array[m][n] == array[m][n-1]:
+#             n -= 1
+#         elif array[m][n] == array[m-1][n]:
+#             m -= 1
+#         else:
+#             motif += t1[m-1]
+#             m -= 1
+#             n -= 1
+#     motif = list(motif)
+#     motif.reverse()
+#     motif = ''.join(motif)
+#     return motif
 
 
 def mms(short, long):
