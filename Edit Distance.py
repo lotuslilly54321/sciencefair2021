@@ -93,28 +93,78 @@ def edit_distance(s1, s2):
 
     # calculate the costs
     for i in range(1, len(s1)+1):
-        for j in range(1,len(s2)+1):
+        for j in range(1, len(s2)+1):
             A[i][j] = min(
                             cost(s1[i-1], s2[j-1]) + A[i-1][j-1],
                             gap + A[i-1][j],
                             gap + A[i][j-1])
-    return A[len(s1)-1][len(s2)-1]
+    return A[len(s1)][len(s2)]
+
+
+# def edit_array(s1, s2):
+#     gap = 1
+#     A = []
+#     B = []
+#     C = []
+#     # create 2D array
+#     for i in range(len(s1)+1):
+#         a = []
+#         b = []
+#         c = []
+#         for j in range(len(s2)+1):
+#             a.append(0)
+#             b.append((0, 0))
+#             c.append('')
+#         A.append(a)
+#         B.append(b)
+#         C.append(c)
+#
+#     # initialize array for base cases
+#     for i in range(1, len(s1)+1):
+#         A[i][0] = i * gap
+#     for j in range(1, len(s2)+1):
+#         A[0][j] = j * gap
+#
+#     # calculate the costs
+#     for i in range(1, len(s1)+1):
+#         for j in range(1, len(s2)+1):
+#             minimum = min(
+#                             cost(s1[i-1], s2[j-1]) + A[i-1][j-1],
+#                             gap + A[i-1][j],
+#                             gap + A[i][j-1])
+#             A[i][j] = minimum
+#             if minimum == gap + A[i][j-1]:
+#                 B[i][j] = (i, j-1, 'a')
+#             elif minimum == gap + A[i-1][j]:
+#                 B[i][j] = (i-1, j, 'b')
+#             elif minimum == cost(s1[i - 1], s2[j - 1]) + A[i - 1][j - 1]:
+#                 B[i][j] = (i - 1, j - 1, 'p')
+#     previous = B[i][j]
+#     edited_a = list(str1)
+#     edited_b = list(str2)
+#     while True:
+#         prev_i, prev_j, edit = previous
+#         if prev_i == 0 and prev_j == 0:
+#             break
+#         if edit == 'a':
+#             edited_a.insert(prev_i-1, '-')
+#         if edit == 'b':
+#             edited_b.insert(prev_j-1, '-')
+#         previous = B[prev_i][prev_j]
+#     print ''.join(edited_a)
+#     print ''.join(edited_b)
+#     return edited_a, edited_b
 
 
 def edit_array(s1, s2):
     gap = 1
     A = []
-    B = []
     # create 2D array
     for i in range(len(s1)+1):
         a = []
-        b = []
         for j in range(len(s2)+1):
             a.append(0)
-            b.append((0, 0))
         A.append(a)
-        B.append(b)
-
     # initialize array for base cases
     for i in range(1, len(s1)+1):
         A[i][0] = i * gap
@@ -123,28 +173,41 @@ def edit_array(s1, s2):
 
     # calculate the costs
     for i in range(1, len(s1)+1):
-        for j in range(1,len(s2)+1):
-            minimum = min(
+        for j in range(1, len(s2)+1):
+            A[i][j] = min(
                             cost(s1[i-1], s2[j-1]) + A[i-1][j-1],
                             gap + A[i-1][j],
                             gap + A[i][j-1])
-            A[i][j] = minimum
-            if minimum == cost(s1[i-1], s2[j-1]) + A[i-1][j-1]:
-                B[i][j] = (i-1, j-1)
-            elif minimum == gap + A[i-1][j]:
-                B[i][j] = (i-1, j)
-            elif minimum == gap + A[i][j-1]:
-                B[i][j] = (i, j-1)
-    paths = []
-    paths.append((i,j))
-    previous = B[i][j]
-    while True:
-        prev_i, prev_j = previous
-        if prev_i == 0 and prev_j == 0:
-            break
-        paths.append(previous)
-        previous = B[prev_i][prev_j]
-    return paths
+    i = len(s1)
+    j = len(s2)
+    a_edited = ''
+    b_edited = ''
+    while i > 0 and j > 0:
+        above = A[i-1][j]
+        left = A[i][j-1]
+        diagonal = A[i-1][j-1]
+        if above < left and above < diagonal:
+            b_edited += '-'
+            a_edited += str1[i-1]
+            i -= 1
+        elif left < diagonal:
+            b_edited += str2[j-1]
+            a_edited += '-'
+            j -= 1
+        else:
+            a_edited += str1[i-1]
+            b_edited += str2[j-1]
+            i -= 1
+            j -= 1
+    a_list = list(a_edited)
+    b_list = list(b_edited)
+    a_list.reverse()
+    b_list.reverse()
+    new_a = ''.join(a_list)
+    new_b = ''.join(b_list)
+    print new_a
+    print new_b
+    return new_a, new_b, naive_mm(new_a, new_b)
 
 
 def edit_alignment(str1, str2):
@@ -152,23 +215,7 @@ def edit_alignment(str1, str2):
     built_strings = ['', '']
     i = len(str1) - 1
     j = len(str2) - 1
-    while len(path) > 0:
-        if path[len(path)-1] == 'p':
-            built_strings[0] = str1[i] + built_strings[0]
-            built_strings[1] = str2[j] + built_strings[1]
-            i -= 1
-            j -= 1
-        elif path[len(path)-1] == 's':
-            built_strings[0] = '-' + built_strings[0]
-            built_strings[1] = str2[j] + built_strings[1]
-            j -= 1
-        elif path[len(path)-1] == 'd':
-            built_strings[0] = str1[i] + built_strings[0]
-            built_strings[1] = '-' + built_strings[1]
-            i -= 1
-        print path
-        path = path[1:]
-        print built_strings
+
 
 
 
@@ -180,5 +227,5 @@ str2 = data[1]
 
 # print mms('AAA', 'GGGAAGAAAG')
 # print edit_distance('AAA', '0123AAA7890')
-
-print edit_alignment(data[0], data[1])
+print edit_distance(data[0], data[1])
+print edit_array(data[0], data[1])
