@@ -2,8 +2,6 @@ from __future__ import print_function
 from termcolor import colored
 
 from Bio import SeqIO
-import sys
-import json
 
 
 #
