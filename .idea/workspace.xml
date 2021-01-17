@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36f45df1-9219-43b1-8bf3-15c0ba6ca494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="36f45df1-9219-43b1-8bf3-15c0ba6ca494" name="Default Changelist" comment="fixed edit_array">
+      <change afterPath="$PROJECT_DIR$/Hep B Australia.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hep B China.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hep B Japan1.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hep B Japan2.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hep B Korea.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hep E Burma 2.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hep E Burma.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hep E China.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hep E Pakistan.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vietnam.fasta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Edit Distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Edit Distance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_file" beforeDir="false" afterPath="$PROJECT_DIR$/data_file" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +39,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -168,6 +184,28 @@
       <option name="presentableId" value="Default" />
       <updated>1608757503631</updated>
     </task>
+    <task id="LOCAL-00001" summary="added readme">
+      <created>1610293780842</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610293780842</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed edit_array">
+      <created>1610344026695</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610344026695</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commented out unused functions">
+      <created>1610344093185</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610344093185</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,5 +218,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added readme" />
+    <MESSAGE value="fixed edit_array" />
+    <MESSAGE value="commented out unused functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented out unused functions" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
