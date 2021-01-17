@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36f45df1-9219-43b1-8bf3-15c0ba6ca494" name="Default Changelist" comment="fixed edit_array">
-      <change afterPath="$PROJECT_DIR$/Hep B Australia.fasta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hep B China.fasta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hep B Japan1.fasta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hep B Japan2.fasta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hep B Korea.fasta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hep E Burma 2.fasta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hep E Burma.fasta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hep E China.fasta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hep E Pakistan.fasta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vietnam.fasta" afterDir="false" />
+    <list default="true" id="36f45df1-9219-43b1-8bf3-15c0ba6ca494" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/meghna_vergis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solved_rosalind/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Edit Distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Edit Distance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_file" beforeDir="false" afterPath="$PROJECT_DIR$/data_file" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Counting DNA nucleotides.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Counting DNA nucleotides.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Counting Point Mutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Counting Point Mutations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Edit Distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finding Motif in DNA.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Finding Motif in DNA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finding Shared Motif.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Finding Shared Motif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finding Spliced Motif.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Finding Spliced Motif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hep B Australia.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep B Australia.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hep B China.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep B China.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hep B Japan1.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep B Japan1.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hep B Japan2.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep B Japan2.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hep B Korea.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep B Korea.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hep E Burma 2.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep E Burma2.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hep E Burma.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep E Burma1.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hep E China.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep E China.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hep E Pakistan.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep E Pakistan.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Permutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Permutations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems to go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RNA_splicing.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/RNA_splicing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reverse Complement.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Reverse Complement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeqIO.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared Spliced Motif.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Shared Spliced Motif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Transcribing DNA.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Transcribing DNA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Translating RNA.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/Translating RNA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vietnam.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/fasta_files/Hep B Vietnam.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_file" beforeDir="false" afterPath="$PROJECT_DIR$/solved_rosalind/data_file" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,10 +55,14 @@
   <component name="ProjectId" id="1m4etGhbCzF5OFHThM4LPq1kjU5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/solved_rosalind" />
+      <recent name="$PROJECT_DIR$/solved_rosalind_algorithms" />
+      <recent name="$PROJECT_DIR$/fasta_files" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -70,7 +91,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Edit Distance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,7 +112,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Finding Spliced Motif.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/solved_rosalind_algorithms/Finding Spliced Motif.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +133,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RNA_splicing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/solved_rosalind_algorithms/RNA_splicing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,7 +154,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shared Spliced Motif.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/solved_rosalind_algorithms/Shared Spliced Motif.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +175,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Translating RNA.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/solved_rosalind_algorithms/Translating RNA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610344093185</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed edit_array">
+      <created>1610904988607</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610904988607</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,9 +249,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added readme" />
-    <MESSAGE value="fixed edit_array" />
     <MESSAGE value="commented out unused functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented out unused functions" />
+    <MESSAGE value="fixed edit_array" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed edit_array" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

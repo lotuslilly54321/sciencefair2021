@@ -1,9 +1,20 @@
 from __future__ import print_function
+from termcolor import colored
 
 from Bio import SeqIO
 import sys
 import json
 
+
+#
+# Reads fasta file data
+#
+def read_fasta_data(string):
+    data_arr = read_fasta_file_as_data_arr(string)
+    fasta_data = ''
+    for data in data_arr:
+        fasta_data += data
+    return fasta_data
 
 #
 #
@@ -19,7 +30,7 @@ def read_fasta_file(filename):
     return data
 
 
-def read_fasta_file_modif(filename):
+def read_fasta_file_as_data_arr(filename):
     data_set = []
     with open(filename, 'r') as handle:
         for record in SeqIO.parse(handle, 'fasta'):
@@ -44,6 +55,30 @@ def naive_approximate(gene, chromosome, max_hamming_distance):
         if nmm <= max_hamming_distance:
             occurs.append((i, nmm))
     return occurs
+
+
+def print_in_color(s, standard_color, point_mutation_color):
+    colored_s = ''
+    for c in s:
+        if c.islower():
+            colored_s += colored(c.upper(), point_mutation_color)
+        else:
+            colored_s += colored(c, standard_color)
+    print(colored_s)
+
+
+class TerminalColors:
+    def __init__(self):
+        pass
+    HEADER = '\033[95m'
+    OK_BLUE = '\033[94m'
+    OK_CYAN = '\033[96m'
+    OK_GREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    END_COLOR = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 #
 # chr1 = read_fasta_file('data_file/chr1.FASTA')

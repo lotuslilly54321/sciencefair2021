@@ -1,9 +1,9 @@
-from SeqIO import read_fasta_file_modif
+from utils import read_fasta_file_as_data_arr
 from itertools import combinations
 
 
 def reader(string):
-    data = read_fasta_file_modif(string)
+    data = read_fasta_file_as_data_arr(string)
     return data
 
 
